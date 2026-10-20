@@ -40,7 +40,7 @@ const liveChatForm = document.querySelector("#liveChatForm");
 const liveChatInput = document.querySelector("#liveChatInput");
 
 const VALID_CODE = "7799";
-const PROMO_CODE = "SYA333";
+const PROMO_CODE = "OUG22";
 const STORAGE_KEY = "nexuspredsyr-interface-state";
 const ACCESS_KEY = "nexuspredsyr-access-granted";
 const VALID_SCREENS = new Set(["programs", "dashboard", "id", "result"]);
@@ -560,7 +560,7 @@ function getAutoReply(message) {
       sender: "system",
       author: "NEXUS تلقائي",
       avatar: "N",
-      text: "حساب الدعم الظاهر داخل السيناريو هو @FARISHACKERRR_BOT. لا يتم فتح محادثة أو إرسال بيانات من هذه النسخة.",
+      text: "حساب الدعم الظاهر داخل السيناريو هو @mavritbot. لا يتم فتح محادثة أو إرسال بيانات من هذه النسخة.",
     };
   }
 
