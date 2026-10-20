@@ -14,7 +14,7 @@ async function copyValue(id) {
   const input = document.getElementById(id);
   try {
     await navigator.clipboard.writeText(input.value);
-    showToast(id === "promoCode" ? "تم نسخ الرمز الترويجي SYA333." : "تم نسخ رقم المحفظة التجريبي.");
+    showToast(id === "promoCode" ? "تم نسخ الرمز الترويجي OUG22." : "تم نسخ رقم المحفظة التجريبي.");
   } catch {
     input.select();
     document.execCommand("copy");
