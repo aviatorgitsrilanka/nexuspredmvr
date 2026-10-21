@@ -1847,3 +1847,38 @@ html[dir="rtl"] .live-chat-form input {
     box-shadow: 0 0 0 rgba(71, 198, 255, 0);
   }
 }
+
+/* Keep the conversation collapsed until the visitor opens it. */
+.chat-launcher {
+  position: fixed;
+  bottom: max(12px, env(safe-area-inset-bottom));
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 16;
+  min-height: 48px;
+  padding: 12px 22px;
+  border: 1px solid rgba(88, 191, 255, 0.5);
+  border-radius: 999px;
+  background: #071d38;
+  color: #cbeeff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 8px 28px rgba(0, 3, 16, 0.4);
+}
+.chat-close {
+  width: 36px;
+  height: 36px;
+  border: 0;
+  background: transparent;
+  color: #cbeeff;
+  font-size: 26px;
+  cursor: pointer;
+}
+.chat-launcher:focus-visible, .chat-close:focus-visible {
+  outline: 2px solid #58bfff;
+  outline-offset: 3px;
+}
+.app-shell.has-live-ui:not(.has-open-chat) .screen {
+  padding-bottom: calc(76px + env(safe-area-inset-bottom));
+}

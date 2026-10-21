@@ -280,11 +280,7 @@
         </div>
       </section>
 
-      <div class="live-ticker is-hidden" id="liveTicker" aria-label="شريط الأحداث المتحرك">
-        <div class="ticker-window">
-          <div class="ticker-track" id="tickerTrack"></div>
-        </div>
-      </div>
+      <button class="chat-launcher is-hidden" id="chatLauncher" type="button" aria-controls="liveChat" aria-expanded="false">💬 فتح الدردشة</button>
 
       <section class="live-chat is-hidden" id="liveChat" aria-label="دردشة تلقائية">
         <header class="live-chat-header">
@@ -292,6 +288,7 @@
             <span class="chat-online-dot" aria-hidden="true"></span>
             <strong>تواصل مباشر · تلقائي</strong>
           </div>
+          <button class="chat-close" id="chatClose" type="button" aria-label="إغلاق الدردشة">×</button>
         </header>
         <div class="live-chat-messages" id="liveChatMessages" aria-live="polite"></div>
         <form class="live-chat-form" id="liveChatForm">
